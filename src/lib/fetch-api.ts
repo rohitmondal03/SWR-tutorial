@@ -1,4 +1,4 @@
-export async function fetchAPI() {
-  return fetch("https://fakestoreapi.com/products")
+export async function fetchAPI(url: string) {
+  return fetch(url)
     .then(res => res.json())
 }
